@@ -1,5 +1,5 @@
-/* main styles */
-/* :root{
+main styles 
+ :root{
  --bgcolor: rgba(242, 242, 242,0.8);
  --divcolor:#EAE4D5;
  --font-family: "Caveat", sans-serif;
@@ -22,7 +22,8 @@ body {
 } */
 
 /* nav Bar Saleh */
-/* .navbar {
+
+.navbar {
   position: fixed;
   top: 0;
   left: 10%;
