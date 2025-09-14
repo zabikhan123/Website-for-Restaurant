@@ -543,7 +543,7 @@ display: inline-block;
 
 
 /* section two About page Zabi*/
-/* 
+
 .section-two{
     margin-top: 2rem;
 }
@@ -659,11 +659,11 @@ display: inline-block;
 }
 #title-h1{
   margin-bottom: 1rem;
-} */
+} 
 
 
 /* ------------------------- Making The menu page resposive ---------------------- */
-/* 
+
 @media(max-width:768px){
   
   body{
@@ -673,7 +673,7 @@ display: inline-block;
   } */
 
 /*  nav page  Responsive */
-/* 
+ 
   
       .linklist,
       .btn {
@@ -686,10 +686,10 @@ display: inline-block;
     font-size: 1.5rem;
     
 }
-  */
+  
 
   /*  menu page  Responsive*/
-/* 
+
   .img-div-foods , .img-div-drinks , .img-div-liked{
     width: 100%;
   }
@@ -703,9 +703,9 @@ display: inline-block;
     text-align: center;
    
   }
-   */
+   
   /* footer contact  Responsive*/
-/*   
+ 
   .socialMedia{
     margin-bottom: 4rem;
   }
@@ -726,21 +726,20 @@ display: inline-block;
 .contact-right p{
   text-align: center;
   font-weight: bolder;
-} */
+} 
 
 
 /* Home page section One Resposive */
 
-/* 
 
 .hero-text > h1{
   font-size: 1.7rem;
-} */
+} 
 
 
 /* Home page section two Responsive */
 
-/* 
+
 .man-img {
   display: flex;
   align-items: center;
@@ -801,5 +800,5 @@ display: inline-block;
     margin-top: 4rem;
     margin-left: 17rem;
     font-size: 3rem;
-} */
-
+} 
+}
