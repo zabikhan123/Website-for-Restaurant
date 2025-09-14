@@ -1,5 +1,4 @@
-main styles 
- :root{
+:root{
  --bgcolor: rgba(242, 242, 242,0.8);
  --divcolor:#EAE4D5;
  --font-family: "Caveat", sans-serif;
@@ -17,9 +16,9 @@ main styles
 
 body {
   background-color: var(--bgcolor);
-   font-family: var(--Heading-font-family);
-   cursor: default;
-} */
+  font-family: var(--font-family); /* fixed */
+  cursor: default;
+} 
 
 /* nav Bar Saleh */
 
@@ -46,17 +45,18 @@ body {
 .logo:hover{
    transform: scale(1.1);
 }
- .linklist {
+.linklist {
   display: flex;
   font-family: var(--font-family);
   align-items: center;
   gap: 2rem; 
 }
-  .linklist a {
+.linklist a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: var(--bgcolor);
-  cursor: default;
+  /* color: var(--bgcolor); */
+  color: black;
+  cursor: pointer; /* fixed */
   transition: transform 0.3s;
 }
 
@@ -76,68 +76,64 @@ body {
  transition: transform 0.3s;
  padding: 0.2rem 0.2rem;
  border-radius: 4px;
-background-color: var(--button-color);
+ background-color: var(--button-color);
  font-size: 1rem;
  font-family: var(--font-family);
-  cursor: pointer;
-  border: none;
-   
+ cursor: pointer;
+ border: none;
 }
-
 .btn:hover{
    transform: scale(1.1);
 }
- #nav-toggle {
-      display: none;
-    }
-      .burger {
-      font-size: 1.5rem;
-      color: black;
-      display: none;
-      cursor: pointer;
-    }
-        .sidebar {
-      position: fixed;
-      top: 0;
-      right: -250px;
-      width: 250px;
-      height: 100vh;
-      background: var(--divcolor);
-      color: black;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      transition: right 0.3s ease;
-      z-index: 2;
-    }
-      .sidebar a {
-      color: black;
-      text-decoration: none;
-      font-size: 1.2rem;
-      margin-bottom: 1.5rem;
-      transition: transform 0.3s;
-    }
-    .sidebar a:hover{
+#nav-toggle {
+  display: none;
+}
+.burger {
+  font-size: 1.5rem;
+  color: black;
+  display: none;
+  cursor: pointer;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background: var(--divcolor);
+  color: black;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s ease;
+  z-index: 2;
+}
+.sidebar a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s;
+}
+.sidebar a:hover{
   border-bottom: solid 2px black;
   transform: scale(1.1);
-    }
-    .close-btn {
-      align-self: flex-end;
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: black;
-      margin-bottom: 2rem;
-    }
+}
+.close-btn {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+  margin-bottom: 2rem;
+}
 
-   
-    #nav-toggle:checked ~ .sidebar {
-      right: 0;
-    } */
-
+#nav-toggle:checked ~ .sidebar {
+  right: 0;
+}
     
 /* reservation page styles Saleh */
 
- .form-wrapper {
+.form-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,7 +170,6 @@ background-color: var(--button-color);
   font-size: 16px;
   border: none;
   border-radius: 50px;
-
 }
 .continue:hover {
   background-color: var(--button-color-hover);
@@ -189,7 +184,7 @@ background-color: var(--button-color);
 
 /* footer contact styles  Saleh*/
 
- .contact-footer {
+.contact-footer {
   background-color: var(--bgcolor);
   padding: 60px 20px;
 }
@@ -210,7 +205,7 @@ background-color: var(--button-color);
 .contact-left > p{
   font-size: 1.5rem;
   line-height:1.8rem;
-   margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .socialMedia {
@@ -230,24 +225,23 @@ background-color: var(--button-color);
 .fa-facebook{
   font-size: 4rem;
   color: blue;
-    transition: transform 0.3s ;
-    margin-left: 2rem;
+  transition: transform 0.3s ;
+  margin-left: 2rem;
 }
 .fa-instagram{
-    font-size: 4rem;
+  font-size: 4rem;
   color: #f15757;
-    transition: transform 0.3s ;
-    margin-left: 2rem;
+  transition: transform 0.3s ;
+  margin-left: 2rem;
 }
 .fa-tiktok{
-color: black;
+  color: black;
   font-size: 4rem;
-    transition: transform 0.3s ;
-    margin-left: 1rem;
+  transition: transform 0.3s ;
+  margin-left: 1rem;
 }
 .fa-facebook:hover, .fa-instagram:hover, .fa-tiktok:hover{
-    transform: scale(1.05);
- 
+  transform: scale(1.05);
 }
 .contact-right{
   margin: 0 auto;
@@ -274,7 +268,7 @@ color: black;
   min-width: 300px;
 }
 .contactform input, .contactform textarea{
-    width: 100%;
+  width: 100%;
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -282,13 +276,13 @@ color: black;
   box-sizing: border-box;
 }
 .contactform input:focus, .contactform textarea:focus{
-    border-color: var(--button-color);
+  border-color: var(--button-color);
   outline: none; 
   box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2); 
 }
 .form-note {
   font-size: 12.8px;
-    font-weight: bolder;
+  font-weight: bolder;
   color: black;
   margin-top: 40px;
 }
@@ -296,17 +290,14 @@ color: black;
   resize:none;
 } 
 
-
-
 /* --------------------------------- foods menu styling Ejaaz ---------------------- */
 
- .foods-menu{
+.foods-menu{
   display: flex;
   gap: 0.5rem;
   justify-content: space-evenly;
   margin-top: 2rem;
   padding: 1rem;
-
 }
 .btn-menu{
   width: 9rem;
@@ -341,10 +332,9 @@ color: black;
   font-size: 2.5rem;
 } 
 
-
 /* ----------------------------     img div menus Ejaaz------------------------------ */
 
- .img-div-foods{
+.img-div-foods{
   margin-top: 2rem;
   margin-bottom: 2rem;
   background: url("./img/break-section.jpg");
@@ -365,7 +355,6 @@ color: black;
   text-align: center;
   color: orange;
 } 
-
 
 /* ------------------------ drinks section img Ejaaz ------------------------*/
 
@@ -391,11 +380,10 @@ color: black;
   color: orange;
 } 
 
-
 /* ------------------------ liked foods section img Ejaaz ------------------------*/
 
- .img-div-liked{
-    margin-top: 2rem;
+.img-div-liked{
+  margin-top: 2rem;
   margin-bottom: 2rem;
   background: url("./img/break-section.jpg");
   height: 14rem;
@@ -408,14 +396,13 @@ color: black;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 .img-div-liked > h1{
-    background-color: #fff;
+  background-color: #fff;
   height: 4rem;
   font-size: 2.5rem;
   width: 20rem;
   text-align: center;
   color: orange;
 } 
-
 
 /* ----------------------------- foods menu styling Ejaaz----------------------- */
 
@@ -479,79 +466,74 @@ a{
   padding: 3rem;
 }
  
-
-
 /* Section One  zabi*/
 
- .section-one{
-   background: url("./assesst/image/steak2.jpg");
- height: auto;
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+.section-one{
+  background: url("./assesst/image/steak2.jpg");
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-    .reserve-btn{
-   
-    padding: 0.3rem;
+.reserve-btn{
+  padding: 0.3rem;
   font-size: 1.5rem;
-    font-family: var(--font-family);
-    margin-left: 6rem;
-    background-color: var(--button-color);
-    border-radius: 16px;
-    transition: transform 0.5s ease;
-    display: inline-block;
-    margin-bottom: 6rem;
+  font-family: var(--font-family);
+  margin-left: 6rem;
+  background-color: var(--button-color);
+  border-radius: 16px;
+  transition: transform 0.5s ease;
+  display: inline-block;
+  margin-bottom: 6rem;
 }
 .reserve-btn:hover{
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .hero-text{
-    display: flex;
-    flex-direction: column;
-    margin-left: 7rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 7rem;
 }
 
-    .hero-text >h1{
-    font-size: 2.1rem;
-    color: var(--bgcolor);
-    margin-top: 8rem;
-    font-family: var(--font-family);
-   
+.hero-text >h1{
+  font-size: 2.1rem;
+  color: var(--bgcolor);
+  margin-top: 8rem;
+  font-family: var(--font-family);
 }
 .hero-text >h3{
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    color: var(--bgcolor);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: var(--bgcolor);
 }
 .hero-text >p{
-    margin-left: -0.5rem;
-    font-size: 1.3rem;
-    margin-top: 1.7rem;
-    font-family: var(--font-family);
-    color: var(--bgcolor);
-    margin-bottom: 4rem;
+  margin-left: -0.5rem;
+  font-size: 1.3rem;
+  margin-top: 1.7rem;
+  font-family: var(--font-family);
+  color: var(--bgcolor);
+  margin-bottom: 4rem;
 }
 .homespan{
-   color: var(--button-color);
-transition: transform 0.5s;
-display: inline-block;
+  color: var(--button-color);
+  transition: transform 0.5s;
+  display: inline-block;
 }
 .homespan:hover{
   transform: scale(1.1);
 } 
 
-
 /* section two About page Zabi*/
 
 .section-two{
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .section-two >h1{
-    text-decoration: underline;
-     font-size: 3rem;
-     text-align: center;
-     transition: transform 0.5s ease;
+  text-decoration: underline;
+  font-size: 3rem;
+  text-align: center;
+  transition: transform 0.5s ease;
 }
 .section-two >h1:hover{
   color: var(--button-color);
@@ -559,56 +541,53 @@ display: inline-block;
 }
 
 .logo-cantanir{
-     display: flex;
-     justify-content: space-around;
-     margin-top: 4rem;
-    }
-  .one{
-        
-        background-color: var(--divcolor);
-        border-radius: 8px;
-        height: 9rem;
-        width: 9rem;
-        text-align: center;
-        border: 1px solid black;
-        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
-    }
-    .one:hover{
-        transform: scale(1.1);   
-    }
-    .two{
-        background-color: var(--divcolor);
-        border-radius: 8px;
-           height: 9rem;
-        width: 9rem;
-        text-align: center;
-        border: 1px solid black;
-        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
-    }
-    .two:hover{
-        transform: scale(1.1);   
-    }
-   .three{
-        background-color: var(--divcolor);
-        border-radius: 8px;
-         height: 9rem;
-        width: 9rem;
-        text-align: center;
-        border: 1px solid black;
-        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+.one{
+  background-color: var(--divcolor);
+  border-radius: 8px;
+  height: 9rem;
+  width: 9rem;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.one:hover{
+  transform: scale(1.1);   
+}
+.two{
+  background-color: var(--divcolor);
+  border-radius: 8px;
+  height: 9rem;
+  width: 9rem;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.two:hover{
+  transform: scale(1.1);   
+}
+.three{
+  background-color: var(--divcolor);
+  border-radius: 8px;
+  height: 9rem;
+  width: 9rem;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
 }
 .three:hover{
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 .aboutlogo{
-    margin-top: 2rem;
-    padding-bottom: 30px;
-    color: var(--button-color);
-  
-   
+  margin-top: 2rem;
+  padding-bottom: 30px;
+  color: var(--button-color);
 }
 .man-img {
   display: flex;
@@ -617,9 +596,7 @@ display: inline-block;
   gap: 4rem; 
   margin-top: 4rem;
   border-radius: 8px;
-  
 }
-
 .mainImage img {
   width: 30vw;     
   height: 50vh;
@@ -640,19 +617,18 @@ display: inline-block;
   border-radius: 8px;
   flex: 1; 
 }
-
 .text-block > h1{
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 .text-block > p{
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 .review{
-    display: flex;
-    justify-content: space-around; 
-    gap: 5rem;
-    margin-top: 2rem;
-    font-size: 2.2rem;
+  display: flex;
+  justify-content: space-around; 
+  gap: 5rem;
+  margin-top: 2rem;
+  font-size: 2.2rem;
 }
 .review h3{
   color: var(--button-color);
@@ -661,144 +637,82 @@ display: inline-block;
   margin-bottom: 1rem;
 } 
 
-
 /* ------------------------- Making The menu page resposive ---------------------- */
 
 @media(max-width:768px){
-  
   body{
     display: flex;
     flex-direction: column;
     align-items: center;
-  } */
+  }
 
-/*  nav page  Responsive */
- 
-  
-      .linklist,
-      .btn {
-        display: none;
-      }
-      .burger {
-        display: block;
-      }
-      .logo{
+  /*  nav page  Responsive */
+  .linklist,
+  .btn {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .logo{
     font-size: 1.5rem;
-    
-}
-  
+  }
 
   /*  menu page  Responsive*/
-
   .img-div-foods , .img-div-drinks , .img-div-liked{
     width: 100%;
   }
-.menu-page-header{
-  width: 100%;
-  justify-content: center;
-  background-size:cover;
-} 
-.contact-container{
-    display: block;
+  .menu-page-header{
+    width: 100%;
+    justify-content: center;
+    background-size:cover;
+  } 
+  .menu-catagories , .drinks-section-menu , .liked{
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  /* About page Responsive */
+
+  .man-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .mainImage img {
+    width: 80vw;     
+    height: auto;
+    margin-left: 0;
+  }
+  .text-block {
+    padding: 1rem;
     text-align: center;
-   
+    align-items: center;
   }
-   
-  /* footer contact  Responsive*/
- 
-  .socialMedia{
-    margin-bottom: 4rem;
+  .text-block > h1 {
+    font-size: 1.5rem;
   }
-  .contact-right {
-  padding: 16px 12px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  flex: 1;
-}
-.footersection{
-  margin-top: 4rem;
-}
-.contact-right{
-  margin: 0 auto;
-
-}
-
-.contact-right p{
-  text-align: center;
-  font-weight: bolder;
-} 
-
-
-/* Home page section One Resposive */
-
-
-.hero-text > h1{
-  font-size: 1.7rem;
-} 
-
-
-/* Home page section two Responsive */
-
-
-.man-img {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin: 0;
-  gap: 4rem;
-}
-#img-about{
-  width: 18rem;
-  margin-left: 0.5rem;
-  margin-top: 2rem;
-  height: 18rem;
-}
-.text-block{
-  padding: 0;
-}
-.text-block {
-  font-size: 1.3rem;
-}
-.one{
-        
-        background-color: var(--divcolor);
-        border-radius: 8px;
-        height: 18rem;
-        width: 14rem;
-        text-align: center;
-        border: 1px solid black;
-        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
-    }
-    .one:hover{
-        transform: scale(1.1);   
-    }
-    .two{
-        background-color: var(--divcolor);
-        border-radius: 8px;
-        height: 18rem;
-        width: 14rem;
-        text-align: center;
-        border: 1px solid black;
-        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
-    }
-    .two:hover{
-        transform: scale(1.1);   
-    }
-   .three{
-        background-color: var(--divcolor);
-        border-radius: 8px;
-        height: 18rem;
-        width: 14rem;
-        text-align: center;
-        border: 1px solid black;
-        box-shadow: 14px 16px 12px rgba(0, 0, 0, 0.1);
-        transition: all 0.5s ease;
-}
-.Foodie-Head{
-    margin-top: 4rem;
-    margin-left: 17rem;
-    font-size: 3rem;
-} 
+  .text-block > p {
+    font-size: 1rem;
+  }
+  .review {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.5rem;
+  }
+  .logo-cantanir {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .one, .two, .three {
+    width: 6rem;
+    height: 6rem;
+  }
 }
