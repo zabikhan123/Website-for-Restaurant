@@ -136,7 +136,8 @@ background-color: var(--button-color);
 
     
 /* reservation page styles Saleh */
-/* .form-wrapper {
+
+ .form-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -184,7 +185,7 @@ background-color: var(--button-color);
   border-color: var(--button-color);
   outline: none; 
   box-shadow: 0 0 0 2px rgba(0, 128, 0, 0.2); 
-} */
+} 
 
 /* footer contact styles  Saleh*/
 /* .contact-footer {
